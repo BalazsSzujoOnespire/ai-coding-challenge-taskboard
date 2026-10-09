@@ -1,0 +1,255 @@
+/* Onespire Design System — generated from tokens.json */
+:root, [data-theme="default"] {
+  --os-teal: #05bfbb;
+  --os-teal-hover: #04a8a5;
+  --os-teal-press: #038e8c;
+  --os-teal-wash: #e1f7f7;
+  --os-blue: #0295c7;
+  --os-blue-hover: #027ba6;
+  --os-blue-wash: #e2f2fa;
+  --os-navy: #283e4c;
+  --os-navy-2: #1f323e;
+  --os-navy-3: #15242e;
+  --os-navy-tint: #3b5260;
+  --os-lime: #c7da3c;
+  --os-amber: #febf26;
+  --os-red: #e84855;
+  --os-red-hover: #d23b48;
+  --os-red-wash: #fce9eb;
+  --os-white: #ffffff;
+  --os-surface: #f5f8fa;
+  --os-steel: #a6b3ba;
+  --os-muted: #6b7a8d;
+  --os-body: #333333;
+  --os-black: #000000;
+  --os-n-0: #ffffff;
+  --os-n-25: #fafbfc;
+  --os-n-50: #f5f8fa;
+  --os-n-100: #e8edf1;
+  --os-n-200: #d3dbe1;
+  --os-n-300: #a6b3ba;
+  --os-n-400: #8391a0;
+  --os-n-500: #6b7a8d;
+  --os-n-600: #4e5a6c;
+  --os-n-700: #333333;
+  --os-n-800: #283e4c;
+  --os-n-900: #15242e;
+  --os-n-950: #000000;
+  --fg-1: var(--os-n-800);
+  --fg-2: var(--os-body);
+  --fg-3: var(--os-muted);
+  --fg-4: var(--os-n-400);
+  --fg-inverse: var(--os-white);
+  --bg-1: var(--os-white);
+  --bg-2: var(--os-n-25);
+  --bg-3: var(--os-surface);
+  --bg-inverse: var(--os-navy);
+  --bg-inverse-deep: var(--os-n-900);
+  --border-subtle: var(--os-n-100);
+  --border-default: var(--os-n-200);
+  --border-strong: var(--os-n-300);
+  --link: var(--os-teal);
+  --link-hover: var(--os-teal-hover);
+  --accent: var(--os-teal);
+  --accent-2: var(--os-blue);
+  --success: #27ae60;
+  --success-wash: #e8f7ee;
+  --warn: var(--os-amber);
+  --warn-wash: #fff5d9;
+  --error: var(--os-red);
+  --error-wash: var(--os-red-wash);
+  --info: var(--os-blue);
+  --info-wash: var(--os-blue-wash);
+  --sap-blue: #0a6ed1;
+  --sap-gold: #c79e32;
+  --shadow-xs: 0 1px 2px rgba(40, 62, 76, 0.06);
+  --shadow-sm: 0 1px 3px rgba(40, 62, 76, 0.08), 0 1px 2px rgba(40, 62, 76, 0.04);
+  --shadow-md: 0 4px 10px rgba(40, 62, 76, 0.08), 0 2px 4px rgba(40, 62, 76, 0.04);
+  --shadow-lg: 0 12px 28px rgba(40, 62, 76, 0.12), 0 4px 10px rgba(40, 62, 76, 0.06);
+  --shadow-xl: 0 24px 56px rgba(40, 62, 76, 0.18), 0 8px 16px rgba(40, 62, 76, 0.08);
+  --shadow-teal: 0 10px 28px rgba(5, 191, 187, 0.30);
+  --shadow-inner: inset 0 1px 2px rgba(40, 62, 76, 0.08);
+  --ring-default: 0 0 0 3px rgba(5, 191, 187, 0.30);
+  --ring-strong: 0 0 0 4px rgba(5, 191, 187, 0.45);
+}
+:root {
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 999px;
+  --ease-out: cubic-bezier(0.16, 1, 0.30, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-30: 1.875rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  --fs-56: 3.5rem;
+  --fs-72: 4.5rem;
+  --lh-tight: 1.15;
+  --lh-snug: 1.30;
+  --lh-normal: 1.55;
+  --lh-loose: 1.75;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.10em;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --sp-0: 0;
+  --grad-spire: linear-gradient(135deg, #05BFBB 0%, #0295C7 100%);
+  --grad-spire-h: linear-gradient(90deg, #05BFBB 0%, #0295C7 100%);
+  --grad-navy: linear-gradient(180deg, #304A5A 0%, #283E4C 60%, #1B2E38 100%);
+  --grad-surface: linear-gradient(180deg, #FFFFFF 0%, #F5F8FA 100%);
+  --font-sans: 'Open Sans', 'Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Open Sans', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Consolas, monospace;
+  --text-body: 400 16px/1.55 var(--font-sans); /* From `body` in colors_and_type.css, ui_kits/website/site.css. */
+  --text-h1: 700 56px/1.15 var(--font-display); /* From `h1, .h1` in colors_and_type.css; also `.h1`. */
+  --text-h2: 700 44px/1.15 var(--font-display); /* From `h2, .h2` in colors_and_type.css; also `.h2`. */
+  --text-h3: 600 30px/1.30 var(--font-display); /* From `h3, .h3` in colors_and_type.css; also `.h3`. */
+  --text-h4: 600 24px/1.30 var(--font-display); /* From `h4, .h4` in colors_and_type.css; also `.h4`. */
+  --text-h5: 600 20px/1.30 var(--font-display); /* From `h5, .h5` in colors_and_type.css; also `.h5`. */
+  --text-h6: 600 14px/1.30 var(--font-display); /* From `h6, .h6` in colors_and_type.css — uppercase; also `.h6`. */
+  --text-p: 400 16px/1.55 var(--font-sans); /* From `p` in colors_and_type.css. */
+  --text-small: 400 13px/1.55 var(--font-sans); /* From `small, .small` in colors_and_type.css; also `.small`. */
+  --text-code: 400 0.92em/1.55 var(--font-mono); /* From `code, kbd, samp` in colors_and_type.css. */
+  --text-pre: 400 14px/1.55 var(--font-mono); /* From `pre` in colors_and_type.css. */
+  --text-kbd: 400 0.92em/1.55 var(--font-mono); /* From `code, kbd, samp` in colors_and_type.css. */
+  --text-eyebrow: 600 13px/1.55 var(--font-sans); /* From `.eyebrow` in colors_and_type.css — uppercase. */
+  --text-lead: 400 20px/1.30 var(--font-sans); /* From `.lead` in colors_and_type.css. */
+  --text-caption: 400 12px/1.55 var(--font-sans); /* From `.caption` in colors_and_type.css. */
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.h1 {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.h2 {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.30;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.h4 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.30;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.h5 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.30;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.h6 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.30;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+}
+.p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.small {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.pre {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+}
+.lead {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.30;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}

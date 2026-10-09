@@ -1,0 +1,236 @@
+/* ==========================================================================
+   Onespire Design System — Colors & Typography tokens
+   Based on the official palette + logo kit provided by brand.
+   ========================================================================== */
+
+/* Type stack: the .hu site ships a clean humanist sans (Open Sans in the
+   uploaded WP theme). We standardize on Open Sans + Inter as near-match
+   secondary. Substitute with any brand-supplied woff2 in /fonts and
+   update this @import. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ==============================================================
+     BRAND PALETTE (from onespire-palette.png)
+     ============================================================== */
+
+  /* Primary brand accents — the circular "O" spire mark */
+  --os-teal:        #05BFBB;   /* teal-primary — primary brand accent, CTAs, links, the 'O' mark */
+  --os-teal-hover:  #04A8A5;
+  --os-teal-press:  #038E8C;
+  --os-teal-wash:   #E1F7F7;
+
+  --os-blue:        #0295C7;   /* blue-info — secondary accent, links, info states, inner 'O' stroke */
+  --os-blue-hover:  #027BA6;
+  --os-blue-wash:   #E2F2FA;
+
+  /* Primary surface / cover dark */
+  --os-navy:        #283E4C;   /* navy-primary — covers, section dividers, footer */
+  --os-navy-2:      #1F323E;   /* deeper step */
+  --os-navy-3:      #15242E;   /* deepest */
+  --os-navy-tint:   #3B5260;
+
+  /* Accents */
+  --os-lime:        #C7DA3C;   /* lime-accent — data highlight, positive trend */
+  --os-amber:       #FEBF26;   /* amber-accent — warnings, callouts */
+
+  /* Semantic */
+  --os-red:         #E84855;   /* red-warn — errors, risks, destructive */
+  --os-red-hover:   #D23B48;
+  --os-red-wash:    #FCE9EB;
+
+  /* Neutrals */
+  --os-white:       #FFFFFF;
+  --os-surface:     #F5F8FA;   /* surface-light — alt rows, card backgrounds */
+  --os-steel:       #A6B3BA;   /* steel-gray — borders, disabled */
+  --os-muted:       #6B7A8D;   /* text-muted — captions, secondary copy */
+  --os-body:        #333333;   /* text-body */
+  --os-black:       #000000;
+
+  /* ==============================================================
+     NEUTRAL SCALE (derived, blue-gray warm-cool neutral)
+     ============================================================== */
+  --os-n-0:   #FFFFFF;
+  --os-n-25:  #FAFBFC;
+  --os-n-50:  #F5F8FA;          /* = surface-light */
+  --os-n-100: #E8EDF1;
+  --os-n-200: #D3DBE1;
+  --os-n-300: #A6B3BA;          /* = steel-gray */
+  --os-n-400: #8391A0;
+  --os-n-500: #6B7A8D;          /* = text-muted */
+  --os-n-600: #4E5A6C;
+  --os-n-700: #333333;          /* = text-body */
+  --os-n-800: #283E4C;          /* = navy-primary */
+  --os-n-900: #15242E;
+  --os-n-950: #000000;
+
+  /* ==============================================================
+     SEMANTIC TOKENS
+     ============================================================== */
+  --fg-1: var(--os-n-800);      /* headings — navy */
+  --fg-2: var(--os-body);       /* body */
+  --fg-3: var(--os-muted);      /* muted */
+  --fg-4: var(--os-n-400);      /* placeholder */
+  --fg-inverse: var(--os-white);
+
+  --bg-1: var(--os-white);
+  --bg-2: var(--os-n-25);
+  --bg-3: var(--os-surface);
+  --bg-inverse: var(--os-navy);
+  --bg-inverse-deep: var(--os-n-900);
+
+  --border-subtle:  var(--os-n-100);
+  --border-default: var(--os-n-200);
+  --border-strong:  var(--os-n-300);
+
+  --link:       var(--os-teal);
+  --link-hover: var(--os-teal-hover);
+
+  --accent:     var(--os-teal);
+  --accent-2:   var(--os-blue);
+
+  --success: #27AE60;
+  --success-wash: #E8F7EE;
+  --warn:    var(--os-amber);
+  --warn-wash: #FFF5D9;
+  --error:   var(--os-red);
+  --error-wash: var(--os-red-wash);
+  --info:    var(--os-blue);
+  --info-wash: var(--os-blue-wash);
+
+  /* SAP partnership-aware (used on SAP-specific flows) */
+  --sap-blue: #0A6ED1;
+  --sap-gold: #C79E32;
+
+  /* ==============================================================
+     TYPOGRAPHY
+     ============================================================== */
+  --font-sans:    'Open Sans', 'Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Open Sans', 'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'SF Mono', ui-monospace, Consolas, monospace;
+
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-30: 1.875rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  --fs-56: 3.5rem;
+  --fs-72: 4.5rem;
+
+  --lh-tight: 1.15;
+  --lh-snug:  1.30;
+  --lh-normal:1.55;
+  --lh-loose: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:  0.04em;
+  --tracking-caps:  0.10em;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* ==============================================================
+     SPACING (4px grid)
+     ============================================================== */
+  --sp-0:  0;
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+
+  /* ==============================================================
+     RADII — subtle corporate rounding
+     ============================================================== */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 999px;
+
+  /* ==============================================================
+     SHADOWS — soft, cool-tinted (navy-based)
+     ============================================================== */
+  --shadow-xs:  0 1px 2px rgba(40, 62, 76, 0.06);
+  --shadow-sm:  0 1px 3px rgba(40, 62, 76, 0.08), 0 1px 2px rgba(40, 62, 76, 0.04);
+  --shadow-md:  0 4px 10px rgba(40, 62, 76, 0.08), 0 2px 4px rgba(40, 62, 76, 0.04);
+  --shadow-lg:  0 12px 28px rgba(40, 62, 76, 0.12), 0 4px 10px rgba(40, 62, 76, 0.06);
+  --shadow-xl:  0 24px 56px rgba(40, 62, 76, 0.18), 0 8px 16px rgba(40, 62, 76, 0.08);
+  --shadow-teal: 0 10px 28px rgba(5, 191, 187, 0.30);
+  --shadow-inner: inset 0 1px 2px rgba(40, 62, 76, 0.08);
+
+  /* ==============================================================
+     FOCUS RING
+     ============================================================== */
+  --ring-default: 0 0 0 3px rgba(5, 191, 187, 0.30);
+  --ring-strong:  0 0 0 4px rgba(5, 191, 187, 0.45);
+
+  /* ==============================================================
+     MOTION
+     ============================================================== */
+  --ease-out: cubic-bezier(0.16, 1, 0.30, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+
+  /* ==============================================================
+     SIGNATURE GRADIENTS
+     Primary: teal → blue (from the 'O' spire mark).
+     ============================================================== */
+  --grad-spire:    linear-gradient(135deg, var(--os-teal) 0%, var(--os-blue) 100%);
+  --grad-spire-h:  linear-gradient(90deg,  var(--os-teal) 0%, var(--os-blue) 100%);
+  --grad-navy:     linear-gradient(180deg, #304A5A 0%, var(--os-navy) 60%, #1B2E38 100%);
+  --grad-surface:  linear-gradient(180deg, #FFFFFF 0%, var(--os-surface) 100%);
+}
+
+/* ==========================================================================
+   SEMANTIC ELEMENT DEFAULTS
+   ========================================================================== */
+
+html { font-family: var(--font-sans); color: var(--fg-2); background: var(--bg-1); }
+body { font-size: var(--fs-16); line-height: var(--lh-normal); color: var(--fg-2); -webkit-font-smoothing: antialiased; }
+
+h1, .h1 { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: var(--fs-56); line-height: var(--lh-tight); letter-spacing: var(--tracking-tight); color: var(--fg-1); margin: 0 0 var(--sp-6); }
+h2, .h2 { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: var(--fs-44); line-height: var(--lh-tight); letter-spacing: var(--tracking-tight); color: var(--fg-1); margin: 0 0 var(--sp-5); }
+h3, .h3 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-30); line-height: var(--lh-snug);  color: var(--fg-1); margin: 0 0 var(--sp-4); }
+h4, .h4 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-24); line-height: var(--lh-snug);  color: var(--fg-1); margin: 0 0 var(--sp-3); }
+h5, .h5 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-20); line-height: var(--lh-snug);  color: var(--fg-1); margin: 0 0 var(--sp-2); }
+h6, .h6 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-14); line-height: var(--lh-snug);  color: var(--fg-1); margin: 0 0 var(--sp-2); letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+
+.eyebrow { font-family: var(--font-sans); font-weight: var(--fw-semibold); font-size: var(--fs-13); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--os-teal); }
+
+p  { font-size: var(--fs-16); line-height: var(--lh-normal); color: var(--fg-2); margin: 0 0 var(--sp-4); text-wrap: pretty; }
+.lead { font-size: var(--fs-20); line-height: var(--lh-snug); color: var(--fg-2); font-weight: var(--fw-regular); }
+small, .small { font-size: var(--fs-13); color: var(--fg-3); }
+.caption { font-size: var(--fs-12); color: var(--fg-3); letter-spacing: var(--tracking-wide); }
+
+a { color: var(--link); text-decoration: none; transition: color var(--dur-fast) var(--ease-out); }
+a:hover { color: var(--link-hover); text-decoration: underline; text-underline-offset: 3px; }
+
+code, kbd, samp { font-family: var(--font-mono); font-size: 0.92em; background: var(--bg-3); color: var(--fg-1); padding: 0.12em 0.4em; border-radius: var(--radius-sm); }
+pre { font-family: var(--font-mono); font-size: var(--fs-14); background: var(--bg-3); color: var(--fg-1); padding: var(--sp-4); border-radius: var(--radius-md); overflow-x: auto; }
+
+hr { border: 0; border-top: 1px solid var(--border-subtle); margin: var(--sp-8) 0; }
+
+::selection { background: var(--os-teal); color: #fff; }
